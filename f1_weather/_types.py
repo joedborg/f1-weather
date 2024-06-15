@@ -20,9 +20,11 @@ class Forecast:
         precipitation: float,
         wind_speed: float,
         wind_direction: float,
+        surface_pressure: float,
     ):
         self.temperature: float = temperature
         self.humidity: float = humidity
         self.precipitation: float = precipitation
         self.wind_speed: float = wind_speed
         self.wind_direction: float = wind_direction
+        self.surface_pressure: float = surface_pressure

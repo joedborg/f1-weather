@@ -77,6 +77,7 @@ class Weather:
                 "precipitation",
                 "wind_speed_10m",
                 "wind_direction_10m",
+                "surface_pressure"
             ],
             "timezone": "America/New_York",
         }
@@ -95,6 +96,7 @@ class Weather:
         precipitation = hourly.Variables(2).ValuesAsNumpy()[event.start.hour]
         wind_speed = hourly.Variables(3).ValuesAsNumpy()[event.start.hour]
         wind_direction = hourly.Variables(4).ValuesAsNumpy()[event.start.hour]
+        surface_pressure = hourly.Variables(5).ValuesAsNumpy()[event.start.hour]
 
         return Forecast(
             temperature=temperature,
@@ -102,4 +104,5 @@ class Weather:
             precipitation=precipitation,
             wind_speed=wind_speed,
             wind_direction=wind_direction,
+            surface_pressure=surface_pressure
         )

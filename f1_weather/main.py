@@ -51,6 +51,7 @@ async def pretty(filter: Optional[str], skip: bool, year: int) -> None:
                 ["Precipitation", f"{forecast.precipitation:.2f}mm"],
                 ["Wind Speed", f"{forecast.wind_speed:.2f}m/s"],
                 ["Wind Direction", f"{forecast.wind_direction:.2f}°"],
+                ["Surface Pressure", f"{forecast.surface_pressure:.2f}hPa"],
             ]
 
         else:
@@ -86,6 +87,7 @@ async def json(filter: Optional[str], skip: bool, year: int) -> None:
             jsession["precipitation"] = str(forecast.precipitation)
             jsession["windSpeed"] = str(forecast.wind_speed)
             jsession["windDirection"] = str(forecast.wind_direction)
+            jsession["surfacePressure"] = str(forecast.surface_pressure)
             jsession["error"] = None
 
         else:
