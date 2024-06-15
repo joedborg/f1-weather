@@ -19,3 +19,7 @@ Simply running the command will display all the weather for the default year.
 `--year`: Specify the year.
 
 `--skip`: Skip sessions where weather data isn't available.
+
+## Todo
+
+Add tests!

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "f1-weather"
-version = "0.1.0"
+version = "0.1.1"
 description = "A weather app for Formula 1 enthusiasts"
 authors = ["Joe Borg <joe@josephb.org>"]
 readme = "README.md"
